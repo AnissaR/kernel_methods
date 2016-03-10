@@ -17,3 +17,4 @@ function [similarities] = exponential_euclidean(X, sigma2)
     similarities = squareform(pdist(X,'euclidean'));
     similarities = exp(-similarities./(2*sigma2));
 
+end
